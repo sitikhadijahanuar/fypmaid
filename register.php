@@ -139,7 +139,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		require ('../mysqli_connect.php'); // Connect to the db.
 
 		// Make the query:
-		$q = "INSERT INTO registration (f_name, l_name, phonenumber, registration_date, address, username, password) VALUES ('$fn', '$ln', '$pn', '$rd', '$ad', '$u', SHA1('$p'))";		
+		$q = "INSERT INTO registration (f_name, l_name, phonenumber, registration_date, address, username, password) VALUES ('$fn', '$ln', '$pn', '$rd', '$ad', '$u', md5('$p'))";		
 		$r = mysqli_query ($dbc, $q); // Run the query.
 		
 		if ($r) { // If it ran OK.
