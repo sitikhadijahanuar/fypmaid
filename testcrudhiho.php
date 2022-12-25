@@ -79,7 +79,7 @@ session_start();
 					?>
 				</div>
 				<div class="row">
-					<a href="print_pdf.php" class="btn btn-success pull-right"><span class="glyphicon glyphicon-print"></span> PDF</a>
+					<a href="print_pdf.php" target="_blank" class="btn btn-success pull-right"><span class="glyphicon glyphicon-print"></span> PDF</a>
 				</div>
 				<div class="height10">
 				</div>

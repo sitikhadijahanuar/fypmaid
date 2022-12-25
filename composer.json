@@ -1,0 +1,30 @@
+{
+    "name": "syahril/khairat",
+    "require": {
+        "phpmailer/phpmailer": "^6.5",
+        "phpoffice/phpspreadsheet": "^1.23",
+        "clue/graph": "^0.9.3",
+        "symfony/finder": "^5.3",
+        "symfony/console": "^5.2",
+        "ezyang/htmlpurifier": "^4.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Syahril\\Khairat\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Syahril Ashraf",
+            "email": "bajuhitam400@gmail.com"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "cweagans/composer-patches": true
+        },
+        "platform": {
+            "php": "7.3"
+        }
+    }
+}
