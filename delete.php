@@ -2,8 +2,8 @@
 session_start();
 include_once('mysqli_connect.php');
 
-if (isset($_GET['register_id'])) {
-	$sql = "DELETE FROM registration WHERE register_id = '" . $_GET['register_id'] . "'";
+if (isset($_GET['id'])) {
+	$sql = "DELETE FROM registration WHERE register_id = '" . $_GET['id'] . "'";
 
 	//use for MySQLi OOP
 	if ($dbc->query($sql)) {

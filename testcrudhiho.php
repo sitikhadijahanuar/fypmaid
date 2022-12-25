@@ -91,13 +91,13 @@ session_start();
 							<th>Last Name</th>
 							<th>Phone Number</th>
 							<th>Booking Date</th>
-							<th>Address</th>
+							<!-- <th>Address</th> -->
 							<th>Action</th>
 						</thead>
 						<tbody>
 							<?php
 							include_once('mysqli_connect.php');
-							$sql = "SELECT * FROM members";
+							$sql = "SELECT * FROM registration";
 
 							//use for MySQLi-OOP
 							$query = $dbc->query($sql);
@@ -109,7 +109,7 @@ session_start();
 									<td>" . $row['l_name'] . "</td>
 									<td>" . $row['phonenumber'] . "</td>
 									<td>" . $row['registration_date'] . "</td>
-									<td>" . $row['address'] . "</td>
+
 									<td>
 										<a href='#edit_" . $row['register_id'] . "' class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Edit</a>
 										<a href='#delete_" . $row['register_id'] . "' class='btn btn-danger btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-trash'></span> Delete</a>

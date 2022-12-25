@@ -3,11 +3,11 @@ session_start();
 include_once('mysqli_connect.php');
 
 if (isset($_POST['edit'])) {
-	$register_id = $_POST['register_id'];
-	$fn = $_POST['f_name'];
-	$ln = $_POST['l_name'];
-	$ad = $_POST['address'];
-	$sql = "UPDATE registration SET f_name = '$fn', l_name = '$ln', address = '$ad' WHERE register_id = '$register_id'";
+	$register_id = $_POST['id'];
+	$fn = $_POST['firstname'];
+	$ln = $_POST['lastname'];
+	// $ad = $_POST['address'];
+	$sql = "UPDATE registration SET f_name = '$fn', l_name = '$ln' WHERE register_id = '$register_id'";
 
 	//use for MySQLi OOP
 	if ($dbc->query($sql)) {
